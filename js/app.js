@@ -16,24 +16,25 @@ function writeNumEntriesOnPage(journal)
 function writeEntriesToPage(journal)
 {
 
-	$("#journalContent").html(journal.entries[0].toHTML());
+	$("#journalContent").html(journal.entries[3].toHTML());
 
 }
 
 $("#journalForm").submit(function(event){
 	 event.preventDefault();
 
-	var author = $("#author").val()
-	 $("#journalContent").append(author);
+	var author = $("#author").val();
+	 $("#journalContent").append("<h3 class='authorClass'>" + author + "</h3>");
 
 	var title = $("#title").val()
-	 $("#journalContent").append(title);
+	 $("#journalContent").append("<h1 class='titleClass'>" + title + "</h1>");
 
 	 var content = $("#content").val()
-	 $("#journalContent").append(content);
+	 $("#journalContent").append("<p class='contentClass'>" + content + "</p>");
 
 	 var tags = $("#tags").val()
-	 $("#journalContent").append(tags);
+	 $("#journalContent").append("<h4 class='tagsClass'>" + tags + "</h4>");
+
 });
 
 
