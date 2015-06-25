@@ -20,7 +20,26 @@ function writeEntriesToPage(journal)
 
 }
 
+$("#journalForm").submit(function(event){
+	 event.preventDefault();
+
+	var author = $("#author").val()
+	 $("#journalContent").append(author);
+
+	var title = $("#title").val()
+	 $("#journalContent").append(title);
+
+	 var content = $("#content").val()
+	 $("#journalContent").append(content);
+
+	 var tags = $("#tags").val()
+	 $("#journalContent").append(tags);
+});
+
+
+
 writeNumEntriesOnPage(myJournal);
 writeEntriesToPage(myJournal);
+
 
 
