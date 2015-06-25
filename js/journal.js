@@ -11,19 +11,19 @@ function Journal()
 	}
 
 	// Displays an Entry object
-	this.displayEntry = function showEntry(entry) {
-		console.log("------------------------------");
-		console.log("\t" + entry.title + "\n");
-		console.log("\t" + "By: " + entry.author);
-		console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		console.log(entry.content);	
+	// this.displayEntry = function showEntry(entry) {
+	// 	console.log("------------------------------");
+	// 	console.log("\t" + entry.title + "\n");
+	// 	console.log("\t" + "By: " + entry.author);
+	// 	console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+	// 	console.log(entry.content);	
 
-		// log the tags
-		for (var i = 0; i < entry.tags.length; i++) {
-			console.log("#" + entry.tags[i] + " ");		
-		}
-		console.log("------------------------------");
-	}
+	// 	// log the tags
+	// 	for (var i = 0; i < entry.tags.length; i++) {
+	// 		console.log("#" + entry.tags[i] + " ");		
+	// 	}
+	// 	console.log("------------------------------");
+	// }
 
 	this.toHTML = function() {
 		var htmlString = "";

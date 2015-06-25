@@ -10,7 +10,7 @@ myJournal.addEntry("Huh?", "Who gave my journal to Jaden?", "Ben", ["Confused"])
 
 function writeNumEntriesOnPage(journal)
 {
-	$('#entryCount').html(journal.entries.length + "entries");
+	$('#entryCount').html(journal.entries.length + " entries");
 }
 
 function writeEntriesToPage(journal)
@@ -22,4 +22,5 @@ function writeEntriesToPage(journal)
 
 writeNumEntriesOnPage(myJournal);
 writeEntriesToPage(myJournal);
+
 
